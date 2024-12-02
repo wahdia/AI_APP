@@ -13,8 +13,8 @@ google-auth
 google-auth-oauthlib
 google-pasta
 grpcio
-tensorflow>=2.18.0
-h5py
+tensorflow
+h5py==3.12.1
 idna
 keras
 kiwisolver
