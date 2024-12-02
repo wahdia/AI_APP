@@ -10,5 +10,6 @@ tensorflow
 scipy
 numpy
 pandas
+h5py
 
 
