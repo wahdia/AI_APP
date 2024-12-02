@@ -1,6 +1,6 @@
 # étant donné que le modèle est au format pickle
 # j'aurais besoin de tableau numpy pour les passer à mon modèle
-# import h5py
+import h5py
 import numpy as np
 import streamlit as st
 import inspect
@@ -38,7 +38,7 @@ def smil_prediction(img, mdl="Image_Smil_classifier.h5"):
 
 # cette fonction attend 2 paramètres
 # un chemin vers une image et un chemin vers un modèle de ML/DL
-def TB_prediction(img, mdl="Image_TB_classifier.h5"):
+def TB_prediction(img, mdl="image_TB_classifier.h5"):
     # je précharge mon modèle
     model = load_model(mdl)
 
