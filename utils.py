@@ -6,13 +6,15 @@ import streamlit as st
 import inspect
 from keras.models import load_model  # type: ignore
 import tensorflow as tf  # type:ignore
+import os 
 
 
 # cette fonction attend 2 paramètres
 # un chemin vers une image et un chemin vers un modèle de ML/DL
 def smil_prediction(img, mdl="Image_Smil_classifier.h5"):
     # je précharge mon modèle
-    model = load_model(mdl)
+    # model = load_model(mdl)
+    model = load_model(os.path.exists(mdl))
 
     # config pour annoncer la taille de mon image
     image_size = (256, 256)
@@ -40,8 +42,8 @@ def smil_prediction(img, mdl="Image_Smil_classifier.h5"):
 # un chemin vers une image et un chemin vers un modèle de ML/DL
 def TB_prediction(img, mdl="image_TB_classifier.h5"):
     # je précharge mon modèle
-    model = load_model(mdl)
-
+    # model = load_model(mdl)
+    model = load_model(os.path.exists(mdl))
     # config pour annoncer la taille de mon image
     image_size = (256, 256)
 
