@@ -14,13 +14,7 @@ requests-oauthlib
 rsa
 six
 tensorboard
-tensorboard-data-server
 tensorflow
-tensorflow-estimator
-tensorflow-io-gcs-filesystem
-tensorflow-macos
-termcolor
-typing_extensions
 tzdata
 urllib3
 Werkzeug
